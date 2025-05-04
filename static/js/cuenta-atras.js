@@ -1,0 +1,36 @@
+document.addEventListener("DOMContentLoaded", () => {
+	const targetTime = new Date("2025-05-10T09:00:00").getTime();
+	const countdownElement = document.getElementById("countdown");
+	if (!countdownElement || Number.isNaN(targetTime)) {
+		console.error(
+			"Elemento countdown no encontrado o fecha objetivo inválida.",
+		);
+		if (countdownElement) {
+			countdownElement.textContent = "Cargando...";
+		}
+		return;
+	}
+	function updateCountdown() {
+		if (!countdownElement) {
+			console.error("Error interno: countdownElement se volvió null.");
+			clearInterval(intervalId);
+			return;
+		}
+		const now = new Date().getTime();
+		const timeLeft = targetTime - now;
+		if (timeLeft <= 0) {
+			countdownElement.textContent = "¡Tiempo terminado!";
+			clearInterval(intervalId);
+			return;
+		}
+		const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+		const hours = Math.floor(
+			(timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+		);
+		const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+		const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+		countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+	}
+	updateCountdown();
+	const intervalId = setInterval(updateCountdown, 1000);
+});

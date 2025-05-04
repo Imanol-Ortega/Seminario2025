@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="static/img/STI.webp" />
+    <title>SeminarioUCI</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="nav-container">
+        <nav>
+            <div class="container-nav">
+                <div class="container-logo">
+                    <img src="static/img/STI.webp" alt="Logo STI" class="logo" />
+                </div>
+                <ul>
+                    <li>
+                        <a href="#inicio" class="grupo">
+                            <span class="span-name-nav">Inicio</span>
+                            <span class="span-nav"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#disertantes" class="grupo">
+                            <span class="span-name-nav">Disertantes</span>
+                            <span class="span-nav"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cronograma" class="grupo">
+                            <span class="span-name-nav">Cronograma</span>
+                            <span class="span-nav"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <div class="z-[100] w-full">
+        <main>
+            <section id="inicio">
+                <div class="contenedor-principal">
+                    <div class="titulo-principal">
+                        <div class="titulo-textos">
+                            <h1>Seminario Tecnológico Informático</h1>
+                            <p>
+                                Edición <span class="edicion-numero">XX</span>
+                            </p>
+                        </div>
+                        <div class="info-evento">
+                            <span class="info-linea">
+                                <svg viewBox="0 0 384 512" class="icono" fill="currentColor">
+                                    <path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
+                                </svg>
+                                <p>Universidad Católica, Campus Itapúa</p>
+                            </span>
+                            <span class="info-linea">
+                                <svg viewBox="0 0 448 512" class="icono" fill="currentColor">
+                                    <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l352 0 0 256c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256z">
+                                    </path>
+                                </svg>
+                                <p>10 de Mayo</p>
+                            </span>
+                        </div>
+                        <div class="cuenta-atras">
+                            CUENTA ATRAS PARA EL EVENTO
+                            <div id="countdown"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="disertantes">
+                <div class="contenedor-disertantes">
+                    <h2 class="titulo-disertantes">
+                        Disertantes
+                    </h2>
+                    <div class="disertantesContenedor">
+                        <div class="disertante">
+                            <picture>
+                                <source srcset="static/img/disertantes/julianacoronel.webp" type="image/webp" />
+                                <img src="static/img/disertantes/julianacoronel.webp" alt="Juliana Coronel" loading="lazy"/>
+                            </picture>
+                            <div class="textoDisertante">
+                                <h3>Lic. Juliana Coronel</h3>
+                                <p>&nbsp;&nbsp;•&nbsp;&nbsp;Directora de Smart Brain Insights Paraguay (SBI)</p>
+                                <p>
+                                    <span>Tema:</span> "Neuroagilidad: Aprender con rapidez, agilidad y flexibilidad en la era de la Inteligencia"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="disertante">
+                            <picture>
+                                <source srcset="static/img/disertantes/ismaelpozzo.webp" type="image/webp" />
+                                <img src="static/img/disertantes/ismaelpozzo.webp" alt="Ismael Pozzo" loading="lazy"/>
+                            </picture>
+                            <div class="textoDisertante">
+                                <h3 >Lic. Ismael Pozzo</h3>
+                                <p>&nbsp;&nbsp;•&nbsp;&nbsp; CEO y fundador de Waraní Studios, dedicado al desarrollo de videojuegos.</p>
+                                <p>
+                                    <span>Tema:</span> "Desarrollo de videojuegos en Paraguay"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="disertante">
+                            <picture >
+                                <source srcset="static/img/disertantes/sergiopohlmann.webp" type="image/webp" />
+                                <img src="static/img/disertantes/sergiopohlmann.webp" alt="Sergio Pohlmann" loading="lazy"/>
+                            </picture>
+                            <div class="textoDisertante">
+                                <h3>Ing. Sergio Pohlmann</h3>
+                                <p >&nbsp;&nbsp;•&nbsp;&nbsp;Especialista en Ciberseguridad</p>
+                                <p>
+                                    <span>Tema:</span> "Cómo mejorar sus consultas para inteligencias artificiales"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="disertante">
+                            <picture >
+                                <source srcset="static/img/disertantes/kokidure.webp" type="image/webp" />
+                                <img src="static/img/disertantes/kokidure.webp" alt="Koki Duré" loading="lazy"/>
+                            </picture>
+                            <div class="textoDisertante">
+                                <h3>Ing. Koki Duré</h3>
+                                <p>&nbsp;&nbsp;• &nbsp;&nbsp;Divulgador Tecnológico</p>
+                                <p>
+                                    <span>Tema:</span> "De Programador Local a Talento Global: Cómo la IA y el Trabajo Remoto Cambian tu Futuro"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cronograma" class="cronograma-section">
+                <div class="cronograma-container">
+                    <h1 class="cronograma-title">Cronograma</h1>
+                    <div class="cronograma-items">
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-title">CHECK-IN</h2>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span>08:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-title">APERTURA</h2>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >08:30 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-subtitle">
+                                    "Neuroagilidad: Aprender con rapidez, agilidad y flexibilidad en la era de la Inteligencia"
+                                </h2>
+                                <p class="cronograma-speaker">
+                                    Disertante: <span>Lic. Juliana Coronel</span>
+                                </p>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >09:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-subtitle">
+                                    "Desarrollo de Videojuegos en Paraguay"
+                                </h2>
+                                <p class="cronograma-speaker">
+                                    Disertante: <span>Lic. Ismael Pozzo</span>
+                                </p>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >10:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-subtitle">
+                                    "Cómo mejorar sus consultas para Inteligencias Artificiales"
+                                </h2>
+                                <p class="cronograma-speaker">
+                                    Disertante: <span>Ing. Sergio Pohlmann</span>
+                                </p>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >11:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-title">ALMUERZO</h2>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >12:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-subtitle">
+                                    "De Programador Local a Talento Global: Cómo la IA y el Trabajo Remoto Cambian tu Futuro"
+                                </h2>
+                                <p class="cronograma-speaker">
+                                    Disertante: <span>Ing. Koki Duré</span>
+                                </p>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >13:00 hs</span>
+                            </div>
+                        </div>
+                        <div class="cronograma-item">
+                            <div class="cronograma-item-info">
+                                <h2 class="cronograma-item-title">SORTEO Y CIERRE</h2>
+                            </div>
+                            <div class="cronograma-item-time">
+                                <span >14:00 hs</spa>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="auspicios">
+    <div class="contenedor-auspicios">
+        <div class="auspiciosContenedor">
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/log_mica.webp" type="image/png" />
+                    <img src="static/img/auspicios/log_mica.webp" alt="Mica" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/LOGOMX.webp" type="image/png" />
+                    <img src="static/img/auspicios/LOGOMX.png" alt="MX" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo_Buss3D_.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo_Buss3D_.webp" alt="Buss3D" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo-yerba-mate.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo-yerba-mate.webp" alt="Yerba Mate Colonias" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo_hierrocenter.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo_hierrocenter.webp" alt="Hierrocenter" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo_integradevs.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo_integradevs.webp" alt="Integradevs" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo_lavalux.webp" type="image/jpeg" />
+                    <img src="static/img/auspicios/logo_lavalux.webp" alt="Lavalux" loading="lazy"/>
+                </picture>
+            </div>
+            <div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo_selecta.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo_selecta.webp" alt="Selecta Paraguaya" loading="lazy"/>
+                </picture>
+            </div><div class="auspicio">
+                <picture>
+                    <source srcset="static/img/auspicios/logo-tasty.webp" type="image/png" />
+                    <img src="static/img/auspicios/logo-tasty.webp" alt="Pizzeria Tasty" loading="lazy"/>
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+      </div>
+        <footer class="footer-container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/seminariosti/" target="_blank">
+                    <svg viewBox="0 0 448 512" class="icono" fill="currentColor">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/SeminarioSTI" target="_blank" >
+                    <svg viewBox="0 0 448 512" class="icono" fill="currentColor">
+                        <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"></path>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                © 2025 Seminario Tecnológico Informático - UCI
+            </p>
+        </footer>
+    </div>
+    <script src="static/js/cuenta-atras.js"></script>
+</body>
+</html>
