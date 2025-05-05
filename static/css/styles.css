@@ -500,7 +500,7 @@ h3 {
 }
 @media (width <= 640px) {
 	.titulo-textos h1 {
-		font-size: 2.25rem;
+		font-size: 2.75rem;
 	}
 }
 @media (min-width: 640px) {
